@@ -8,7 +8,6 @@ This project is divided into five total scripts, where each one has a single and
 
 `Rod`: This file maintains a Stack<GameObject> representing the disks on each rod, handles the placement rule (no larger disk on a smaller one), world-space stacking position calculation, disk parenting, and collider management so only the top-most disk is ever clickable. For the world-space disk positioning, all disks are calculated in absolute world space using a fixed disk height constant. The formula used: worldY = DISK_HEIGHT + stackIndex * (DISK_HEIGHT * 2) ensures correct stacking on any rod regardless of where that rod’s parent GameObject sits in the scene. This decision was crucial as it eliminated bugs that arose from relying on local space coordinates, which were corrupted whenever a disk was re-parented between rods with different transforms.
 
-<br>
 
 `DiskSpawner`: This file instantiates disk prefabs at game start and on reset. Uses Mathf.Lerp to distribute disk widths evenly between a minimum and maximum size regardless of disk count, ensuring disks always fit within the pole spacing. The file also holds an array of materials to color each disk a different color. I made four different materials (colors) for the disks, so once the number of disks is greater than four, the colors will cycle back and reset.
 
