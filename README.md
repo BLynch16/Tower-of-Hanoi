@@ -25,3 +25,5 @@ This project is divided into five total scripts, where each one has a single and
 I have learned some great lessons doing this project. First, I saw first hand how modular design dramatically simplifies debugging and future modifications. By isolating responsibilities such as: move validation, UI updates, and algorithm execution - each component remained easy to reason about and test. Also, I learned that Unity’s UI system requires deliberate configuration. Issues like text overflow, anchoring, and dynamic resizing highlights the importance of understanding RectTransforms and layout behavior. I had to understand these things to correctly implement the text panel that describes the overview of the game and the rules.
 
 ## Photos
+
+<img width="512" height="304" alt="Image" src="https://github.com/user-attachments/assets/d72adb77-e172-45c1-8e0a-7c0625f7398b" />
